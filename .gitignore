@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+*.egg
+
+*.pt
+*.pth
+*.onnx
+!x2_deploy_pkg/models/*.onnx
+
+logs/
+outputs/
+
+*.log
+
+*.so
+*.o

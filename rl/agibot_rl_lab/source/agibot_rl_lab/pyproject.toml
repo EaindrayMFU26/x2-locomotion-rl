@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel", "toml"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agibot_rl_lab"
+version = "0.1.0"
+description = "Reinforcement Learning Lab for AgiBot X2 (built on top of unitree_rl_lab)."
+dependencies = [
+    "argcomplete",
+]
+requires-python = ">=3.10"
+license = { text = "Apache 2.0" }
+authors = [
+    { name = "AgiBot / lingxi" }
+]
+maintainers = [
+    { name = "AgiBot / lingxi" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux"
+]
+dynamic = []

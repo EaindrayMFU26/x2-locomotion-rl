@@ -1,0 +1,19 @@
+# ros2 bag record QoS override: make the recorder's subscription compatible with the command publisher (RELIABLE+VOLATILE).
+# best_effort sub accepts reliable pub; volatile sub accepts volatile/transient_local pub; keep_all avoids dropped frames.
+# Usage: ros2 bag record --qos-profile-overrides-path x2_config/qos_override.yaml <topics...>
+/aima/hal/joint/leg/command:
+  history: keep_all
+  reliability: best_effort
+  durability: volatile
+/aima/hal/joint/waist/command:
+  history: keep_all
+  reliability: best_effort
+  durability: volatile
+/aima/hal/joint/arm/command:
+  history: keep_all
+  reliability: best_effort
+  durability: volatile
+/aima/hal/joint/head/command:
+  history: keep_all
+  reliability: best_effort
+  durability: volatile

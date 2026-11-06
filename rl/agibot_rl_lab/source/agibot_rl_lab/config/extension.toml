@@ -1,0 +1,26 @@
+[package]
+
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Description
+category = "isaaclab"
+readme  = "README.md"
+
+title = "AgiBot RL Lab"
+author = "AgiBot / lingxi"
+maintainer = "AgiBot / lingxi"
+description = "reinforcement learning environments for AgiBot X2 (built on unitree_rl_lab)"
+repository = "https://code.agibot.com/lingxi/sdk/mc-rl"
+keywords = ["extension", "isaaclab", "agibot", "x2"]
+
+[dependencies]
+"isaaclab" = {}
+"isaaclab_assets" = {}
+"isaaclab_rl" = {}
+"isaaclab_tasks" = {}
+# AgiBot X2 reuses unitree_rl_lab's mdp (reward/event/observation/curriculum) functions.
+"unitree_rl_lab" = {}
+
+[[python.module]]
+name = "agibot_rl_lab"
